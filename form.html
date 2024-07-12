@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+  </head>
+  <body>
+    <a href="form.html">Home</a>
+    <a href="tasks.html">Tasks</a>
+    <form action="addtask.php">
+      <div>
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" />
+      </div>
+      <div>
+        <label for="description">Description:</label>
+        <textarea id="description" name="description"></textarea>
+      </div>
+      <div>
+        <label for="catergory">Catergory:</label>
+        <input type="text" id="catergory" name="catergory" />
+      </div>
+      <div>
+        <label for="priority">Priority Level:</label>
+        <select id="priority" name="priority" required>
+          <option value="">Select an Item</option>
+          <option value="Low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+      </div>
+      <div>
+        <label for="progress">Progress Level:</label>
+        <select id="progress" name="progress" required>
+          <option value="">Select an Item</option>
+          <option value="Below">Below Expectation</option>
+          <option value="meeting">Meeting Expectation</option>
+          <option value="exceeding">Exceeding Expectation</option></select
+        ><br />
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
